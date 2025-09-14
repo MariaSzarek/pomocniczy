@@ -3,11 +3,25 @@
 
   <input type="hidden" th:field="*{gameId}"/>
 
-  <label>Home Score</label>
-  <input type="number" th:field="*{predictedHomeScore}"/>
+  <div>
+    <label>Home Team:</label>
+    <input type="text" th:field="*{homeTeam}" readonly />
+  </div>
 
-  <label>Away Score</label>
-  <input type="number" th:field="*{predictedAwayScore}"/>
+  <div>
+    <label>Away Team:</label>
+    <input type="text" th:field="*{awayTeam}" readonly />
+  </div>
+
+  <div>
+    <label>Home Score</label>
+    <input type="number" th:field="*{predictedHomeScore}" />
+  </div>
+
+  <div>
+    <label>Away Score</label>
+    <input type="number" th:field="*{predictedAwayScore}" />
+  </div>
 
   <button type="submit">Dodaj predykcję</button>
 </form>
